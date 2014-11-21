@@ -9,11 +9,30 @@
 /* Begin PBXBuildFile section */
 		6730711F1A0E15F30025C4AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6730711E1A0E15F30025C4AC /* main.m */; };
 		673071221A0E15F30025C4AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 673071211A0E15F30025C4AC /* AppDelegate.m */; };
-		673071251A0E15F30025C4AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 673071241A0E15F30025C4AC /* ViewController.m */; };
+		673071251A0E15F30025C4AC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 673071241A0E15F30025C4AC /* LoginViewController.m */; };
 		673071281A0E15F40025C4AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 673071261A0E15F40025C4AC /* Main.storyboard */; };
 		6730712A1A0E15F40025C4AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 673071291A0E15F40025C4AC /* Images.xcassets */; };
 		6730712D1A0E15F40025C4AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6730712B1A0E15F40025C4AC /* LaunchScreen.xib */; };
 		673071391A0E15F40025C4AC /* SzoftverArchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 673071381A0E15F40025C4AC /* SzoftverArchTests.m */; };
+		673071511A0E16230025C4AC /* DotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673071441A0E16230025C4AC /* DotView.swift */; };
+		673071521A0E16230025C4AC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 673071451A0E16230025C4AC /* Info.plist */; };
+		673071531A0E16230025C4AC /* InterractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673071461A0E16230025C4AC /* InterractionView.swift */; };
+		673071541A0E16230025C4AC /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673071471A0E16230025C4AC /* Line.swift */; };
+		673071551A0E16230025C4AC /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673071481A0E16230025C4AC /* LineChartView.swift */; };
+		673071561A0E16230025C4AC /* LinePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673071491A0E16230025C4AC /* LinePoint.swift */; };
+		673071571A0E16230025C4AC /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6730714A1A0E16230025C4AC /* Logger.swift */; };
+		673071581A0E16230025C4AC /* MathHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6730714B1A0E16230025C4AC /* MathHelper.swift */; };
+		673071591A0E16230025C4AC /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6730714C1A0E16230025C4AC /* PieChartView.swift */; };
+		6730715A1A0E16230025C4AC /* PieSliceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6730714D1A0E16230025C4AC /* PieSliceLayer.swift */; };
+		6730715B1A0E16230025C4AC /* PSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6730714E1A0E16230025C4AC /* PSColor.swift */; };
+		6730715C1A0E16230025C4AC /* SliceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6730714F1A0E16230025C4AC /* SliceData.swift */; };
+		67C544081A1FD63A001AD629 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C544071A1FD63A001AD629 /* NetworkManager.m */; };
+		67C5440C1A1FDE3B001AD629 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C5440B1A1FDE3B001AD629 /* RegisterViewController.m */; };
+		67C544101A1FEC9C001AD629 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C5440F1A1FEC9C001AD629 /* Group.m */; };
+		67C544131A1FF638001AD629 /* GroupsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C544121A1FF638001AD629 /* GroupsTableViewController.m */; };
+		67C544161A1FF645001AD629 /* UsersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C544151A1FF645001AD629 /* UsersTableViewController.m */; };
+		67C544191A1FF867001AD629 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C544181A1FF867001AD629 /* DetailViewController.m */; };
+		688B5285892E747CA0E80949 /* libPods-SzoftverArch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 281A0C13A55B2B643225325E /* libPods-SzoftverArch.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +46,47 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		281A0C13A55B2B643225325E /* libPods-SzoftverArch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SzoftverArch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		673071191A0E15F30025C4AC /* SzoftverArch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SzoftverArch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6730711D1A0E15F30025C4AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6730711E1A0E15F30025C4AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		673071201A0E15F30025C4AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		673071211A0E15F30025C4AC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		673071231A0E15F30025C4AC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		673071241A0E15F30025C4AC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		673071231A0E15F30025C4AC /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		673071241A0E15F30025C4AC /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		673071271A0E15F40025C4AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		673071291A0E15F40025C4AC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6730712C1A0E15F40025C4AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		673071321A0E15F40025C4AC /* SzoftverArchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SzoftverArchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		673071371A0E15F40025C4AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		673071381A0E15F40025C4AC /* SzoftverArchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SzoftverArchTests.m; sourceTree = "<group>"; };
+		673071431A0E16230025C4AC /* ChartFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartFramework.h; sourceTree = "<group>"; };
+		673071441A0E16230025C4AC /* DotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotView.swift; sourceTree = "<group>"; };
+		673071451A0E16230025C4AC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		673071461A0E16230025C4AC /* InterractionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterractionView.swift; sourceTree = "<group>"; };
+		673071471A0E16230025C4AC /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		673071481A0E16230025C4AC /* LineChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
+		673071491A0E16230025C4AC /* LinePoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinePoint.swift; sourceTree = "<group>"; };
+		6730714A1A0E16230025C4AC /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		6730714B1A0E16230025C4AC /* MathHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathHelper.swift; sourceTree = "<group>"; };
+		6730714C1A0E16230025C4AC /* PieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		6730714D1A0E16230025C4AC /* PieSliceLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieSliceLayer.swift; sourceTree = "<group>"; };
+		6730714E1A0E16230025C4AC /* PSColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSColor.swift; sourceTree = "<group>"; };
+		6730714F1A0E16230025C4AC /* SliceData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliceData.swift; sourceTree = "<group>"; };
+		67C544061A1FD63A001AD629 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkManager.h; path = Model/Networking/NetworkManager.h; sourceTree = "<group>"; };
+		67C544071A1FD63A001AD629 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkManager.m; path = Model/Networking/NetworkManager.m; sourceTree = "<group>"; };
+		67C5440A1A1FDE3B001AD629 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterViewController.h; path = ViewControllers/RegisterViewController.h; sourceTree = "<group>"; };
+		67C5440B1A1FDE3B001AD629 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterViewController.m; path = ViewControllers/RegisterViewController.m; sourceTree = "<group>"; };
+		67C5440E1A1FEC9C001AD629 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Group.h; path = Model/Data/Group.h; sourceTree = "<group>"; };
+		67C5440F1A1FEC9C001AD629 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Group.m; path = Model/Data/Group.m; sourceTree = "<group>"; };
+		67C544111A1FF638001AD629 /* GroupsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroupsTableViewController.h; path = ViewControllers/GroupsTableViewController.h; sourceTree = "<group>"; };
+		67C544121A1FF638001AD629 /* GroupsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GroupsTableViewController.m; path = ViewControllers/GroupsTableViewController.m; sourceTree = "<group>"; };
+		67C544141A1FF645001AD629 /* UsersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersTableViewController.h; sourceTree = "<group>"; };
+		67C544151A1FF645001AD629 /* UsersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersTableViewController.m; sourceTree = "<group>"; };
+		67C544171A1FF867001AD629 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ViewControllers/DetailViewController.h; sourceTree = "<group>"; };
+		67C544181A1FF867001AD629 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ViewControllers/DetailViewController.m; sourceTree = "<group>"; };
+		76FECD6501EE8FE349B486D1 /* Pods-SzoftverArch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SzoftverArch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SzoftverArch/Pods-SzoftverArch.debug.xcconfig"; sourceTree = "<group>"; };
+		9C155CEB0D1BF8ADD54A7D58 /* Pods-SzoftverArch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SzoftverArch.release.xcconfig"; path = "Pods/Target Support Files/Pods-SzoftverArch/Pods-SzoftverArch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				688B5285892E747CA0E80949 /* libPods-SzoftverArch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +108,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36D33CAC2BF63754B9308CAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76FECD6501EE8FE349B486D1 /* Pods-SzoftverArch.debug.xcconfig */,
+				9C155CEB0D1BF8ADD54A7D58 /* Pods-SzoftverArch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		673071101A0E15F30025C4AC = {
 			isa = PBXGroup;
 			children = (
 				6730711B1A0E15F30025C4AC /* SzoftverArch */,
 				673071351A0E15F40025C4AC /* SzoftverArchTests */,
 				6730711A1A0E15F30025C4AC /* Products */,
+				36D33CAC2BF63754B9308CAB /* Pods */,
+				AB1244254F2FD9D8449A21D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,13 +140,14 @@
 		6730711B1A0E15F30025C4AC /* SzoftverArch */ = {
 			isa = PBXGroup;
 			children = (
+				67C544091A1FDE18001AD629 /* ViewControllers */,
+				67C544041A1FD4DD001AD629 /* Model */,
 				673071201A0E15F30025C4AC /* AppDelegate.h */,
 				673071211A0E15F30025C4AC /* AppDelegate.m */,
-				673071231A0E15F30025C4AC /* ViewController.h */,
-				673071241A0E15F30025C4AC /* ViewController.m */,
 				673071261A0E15F40025C4AC /* Main.storyboard */,
 				673071291A0E15F40025C4AC /* Images.xcassets */,
 				6730712B1A0E15F40025C4AC /* LaunchScreen.xib */,
+				673071421A0E16230025C4AC /* ChartFramework */,
 				6730711C1A0E15F30025C4AC /* Supporting Files */,
 			);
 			path = SzoftverArch;
@@ -119,6 +179,78 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		673071421A0E16230025C4AC /* ChartFramework */ = {
+			isa = PBXGroup;
+			children = (
+				673071431A0E16230025C4AC /* ChartFramework.h */,
+				673071441A0E16230025C4AC /* DotView.swift */,
+				673071451A0E16230025C4AC /* Info.plist */,
+				673071461A0E16230025C4AC /* InterractionView.swift */,
+				673071471A0E16230025C4AC /* Line.swift */,
+				673071481A0E16230025C4AC /* LineChartView.swift */,
+				673071491A0E16230025C4AC /* LinePoint.swift */,
+				6730714A1A0E16230025C4AC /* Logger.swift */,
+				6730714B1A0E16230025C4AC /* MathHelper.swift */,
+				6730714C1A0E16230025C4AC /* PieChartView.swift */,
+				6730714D1A0E16230025C4AC /* PieSliceLayer.swift */,
+				6730714E1A0E16230025C4AC /* PSColor.swift */,
+				6730714F1A0E16230025C4AC /* SliceData.swift */,
+			);
+			path = ChartFramework;
+			sourceTree = "<group>";
+		};
+		67C544041A1FD4DD001AD629 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67C5440D1A1FEC84001AD629 /* Data */,
+				67C544051A1FD4E8001AD629 /* Networking */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		67C544051A1FD4E8001AD629 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				67C544061A1FD63A001AD629 /* NetworkManager.h */,
+				67C544071A1FD63A001AD629 /* NetworkManager.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		67C544091A1FDE18001AD629 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				673071231A0E15F30025C4AC /* LoginViewController.h */,
+				673071241A0E15F30025C4AC /* LoginViewController.m */,
+				67C5440A1A1FDE3B001AD629 /* RegisterViewController.h */,
+				67C5440B1A1FDE3B001AD629 /* RegisterViewController.m */,
+				67C544111A1FF638001AD629 /* GroupsTableViewController.h */,
+				67C544121A1FF638001AD629 /* GroupsTableViewController.m */,
+				67C544141A1FF645001AD629 /* UsersTableViewController.h */,
+				67C544151A1FF645001AD629 /* UsersTableViewController.m */,
+				67C544171A1FF867001AD629 /* DetailViewController.h */,
+				67C544181A1FF867001AD629 /* DetailViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		67C5440D1A1FEC84001AD629 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				67C5440E1A1FEC9C001AD629 /* Group.h */,
+				67C5440F1A1FEC9C001AD629 /* Group.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		AB1244254F2FD9D8449A21D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				281A0C13A55B2B643225325E /* libPods-SzoftverArch.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +258,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6730713C1A0E15F40025C4AC /* Build configuration list for PBXNativeTarget "SzoftverArch" */;
 			buildPhases = (
+				A4C9E55B96F4F5EF10EE2D6E /* Check Pods Manifest.lock */,
 				673071151A0E15F30025C4AC /* Sources */,
 				673071161A0E15F30025C4AC /* Frameworks */,
 				673071171A0E15F30025C4AC /* Resources */,
+				3DA2DD6203E51B5376D9EF92 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				673071521A0E16230025C4AC /* Info.plist in Resources */,
 				673071281A0E15F40025C4AC /* Main.storyboard in Resources */,
 				6730712D1A0E15F40025C4AC /* LaunchScreen.xib in Resources */,
 				6730712A1A0E15F40025C4AC /* Images.xcassets in Resources */,
@@ -214,14 +349,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3DA2DD6203E51B5376D9EF92 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SzoftverArch/Pods-SzoftverArch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4C9E55B96F4F5EF10EE2D6E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		673071151A0E15F30025C4AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				673071251A0E15F30025C4AC /* ViewController.m in Sources */,
+				67C544101A1FEC9C001AD629 /* Group.m in Sources */,
+				6730715C1A0E16230025C4AC /* SliceData.swift in Sources */,
+				673071251A0E15F30025C4AC /* LoginViewController.m in Sources */,
+				6730715A1A0E16230025C4AC /* PieSliceLayer.swift in Sources */,
 				673071221A0E15F30025C4AC /* AppDelegate.m in Sources */,
+				673071511A0E16230025C4AC /* DotView.swift in Sources */,
+				673071551A0E16230025C4AC /* LineChartView.swift in Sources */,
+				673071591A0E16230025C4AC /* PieChartView.swift in Sources */,
+				67C5440C1A1FDE3B001AD629 /* RegisterViewController.m in Sources */,
+				6730715B1A0E16230025C4AC /* PSColor.swift in Sources */,
+				673071571A0E16230025C4AC /* Logger.swift in Sources */,
+				67C544161A1FF645001AD629 /* UsersTableViewController.m in Sources */,
+				673071581A0E16230025C4AC /* MathHelper.swift in Sources */,
+				673071561A0E16230025C4AC /* LinePoint.swift in Sources */,
+				673071541A0E16230025C4AC /* Line.swift in Sources */,
+				67C544191A1FF867001AD629 /* DetailViewController.m in Sources */,
+				673071531A0E16230025C4AC /* InterractionView.swift in Sources */,
+				67C544081A1FD63A001AD629 /* NetworkManager.m in Sources */,
 				6730711F1A0E15F30025C4AC /* main.m in Sources */,
+				67C544131A1FF638001AD629 /* GroupsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +528,7 @@
 		};
 		6730713D1A0E15F40025C4AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76FECD6501EE8FE349B486D1 /* Pods-SzoftverArch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SzoftverArch/Info.plist;
@@ -353,6 +539,7 @@
 		};
 		6730713E1A0E15F40025C4AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C155CEB0D1BF8ADD54A7D58 /* Pods-SzoftverArch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SzoftverArch/Info.plist;
@@ -414,6 +601,7 @@
 				6730713E1A0E15F40025C4AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6730713F1A0E15F40025C4AC /* Build configuration list for PBXNativeTarget "SzoftverArchTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +610,7 @@
 				673071411A0E15F40025C4AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
