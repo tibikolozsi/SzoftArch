@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>33DA8B16-2AC1-4850-8D45-FA77BD287C01</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SzoftverArch</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B412511297C13939306F45E1CE5C11D1A1FA4DAB</key>
+		<string>https://github.com/tibikolozsi/SzoftArch</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SzoftverArch.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B412511297C13939306F45E1CE5C11D1A1FA4DAB</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/tibikolozsi/SzoftArch</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B412511297C13939306F45E1CE5C11D1A1FA4DAB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B412511297C13939306F45E1CE5C11D1A1FA4DAB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SzoftverArch</string>
+		</dict>
+	</array>
+</dict>
+</plist>

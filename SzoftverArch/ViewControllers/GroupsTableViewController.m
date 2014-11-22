@@ -8,11 +8,15 @@
 
 #import "GroupsTableViewController.h"
 #import "NetworkManager.h"
+#import "UsersTableViewController.h"
+#import "AddGroupViewController.h"
+#import "DetailViewController.h"
 
 @interface GroupsTableViewController ()
 
-@property NSMutableArray* groups;
-
+@property (nonatomic) NSMutableArray* groups;
+@property (nonatomic) id<DetailProtocol> detailDelegate;
+@property (nonatomic) UIRefreshControl* refreshControl;
 @end
 
 @implementation GroupsTableViewController
@@ -23,9 +27,19 @@
     [self getGroups];
 }
 
+- (void)setupDetailDelegate
+{
+    UINavigationController* detailNavController = [self.splitViewController.viewControllers lastObject];
+    if ([[detailNavController topViewController] isKindOfClass:[DetailViewController class]]) {
+        DetailViewController* detailVC = (DetailViewController*)[detailNavController topViewController];
+        self.detailDelegate = detailVC;
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self.refreshControl addTarget:self action:@selector(getGroups) forControlEvents:UIControlEventValueChanged];
+    [self setupDetailDelegate];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -36,13 +50,16 @@
 - (void)getGroups
 {
     [NetworkManager DownloadGroupsWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"got groups: %@",responseObject);
         self.groups = [NSMutableArray array];
         for (id obj in responseObject) {
             Group* group = [[Group alloc] initWithJson:obj];
             [self.groups addObject:group];
         }
-        [self.tableView reloadData];
+        [self reloadData];
+        [self.detailDelegate updateDetailWithType:DetailTypeAllGroups dictionary:nil];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        [self.refreshControl endRefreshing];
         NSLog(@"failed : %@",[error description]);
     }];
 }
@@ -60,8 +77,15 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    // Return the number of rows in the section.
-    return [self.groups count];
+    if ([self.groups count] > 0) {
+        [self removeEmptyMessage];
+        // Return the number of rows in the section.
+        return [self.groups count];
+    } else {
+        // Display a message when the table is empty
+        [self displayEmptyMessage];
+        return 0;
+    }
 }
 
 
@@ -112,6 +136,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self performSegueWithIdentifier:@"GoToUsersSegue" sender:self];
+    Group* selectedGroup = [self.groups objectAtIndex:indexPath.row];
+    NSDictionary* dictionary = @{@"groupname" : selectedGroup.groupName};
+    [self.detailDelegate updateDetailWithType:DetailTypeSelectedGroup dictionary:dictionary];
 }
 
 #pragma mark - Navigation
@@ -122,6 +149,16 @@
     // Pass the selected object to the new view controller.
     if ([segue.identifier isEqualToString:@"GoToUsersSegue"]) {
         NSLog(@"thats it");
+        if ([segue.destinationViewController isKindOfClass:[UsersTableViewController class]]) {
+            UsersTableViewController* utvc = (UsersTableViewController*)segue.destinationViewController;
+            NSUInteger selectedIndex = [self.tableView indexPathForSelectedRow].row;
+            utvc.group = [self.groups objectAtIndex:selectedIndex];
+        }
+    } else if ([segue.identifier isEqualToString:@"AddGroupSegue"]) {
+        if ([segue.destinationViewController isKindOfClass:[AddGroupViewController class]]) {
+            AddGroupViewController* agvc = (AddGroupViewController*)segue.destinationViewController;
+            agvc.groupDelegate = self;
+        }
     }
 }
 

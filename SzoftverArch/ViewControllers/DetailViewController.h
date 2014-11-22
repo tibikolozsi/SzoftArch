@@ -8,9 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *label;
+typedef enum : NSUInteger {
+    DetailTypeAllGroups,
+    DetailTypeSelectedGroup,
+    DetailTypeSelectedUser,
+} DetailType;
 
+@protocol DetailProtocol <NSObject>
 
-- (void)refreshDetail;
+- (void)updateDetailWithType:(DetailType)type dictionary:(NSDictionary*)dictionary;
+
+@end
+
+@interface DetailViewController : UIViewController <DetailProtocol>
+
 @end

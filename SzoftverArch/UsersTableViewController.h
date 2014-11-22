@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PullToRefreshTableViewController.h"
+#import "Group.h"
 
-@interface UsersTableViewController : UITableViewController
+@interface UsersTableViewController : PullToRefreshTableViewController
+
+@property (nonatomic) Group* group;
 
 @end

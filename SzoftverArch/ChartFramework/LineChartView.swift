@@ -95,9 +95,9 @@ public class LineChartView: UIView, UIGestureRecognizerDelegate{
     // Line when touching
     var touchLineLeft: InterractionView?
     var touchLineRight: InterractionView?
-    var touchLineLineColor: UIColor = UIColor.whiteColor()
-    var touchLineBackgroundColor: UIColor = UIColor.grayColor()
-    var touchLineWidth: CGFloat = 1.0
+    @IBInspectable var touchLineLineColor: UIColor = UIColor.whiteColor()
+    @IBInspectable var touchLineBackgroundColor: UIColor = UIColor.grayColor()
+    @IBInspectable var touchLineWidth: CGFloat = 1.0
     
     // Gesture recognizers
     var tapGestureRecognizer: UITapGestureRecognizer = UITapGestureRecognizer()

@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PullToRefreshTableViewController.h"
 
-@interface GroupsTableViewController : UITableViewController
+@protocol GroupDelegate <NSObject>
+- (void)getGroups;
+@end
+
+@interface GroupsTableViewController : PullToRefreshTableViewController <GroupDelegate>
 
 @end
+

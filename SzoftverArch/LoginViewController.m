@@ -7,7 +7,6 @@
 //
 
 #import "LoginViewController.h"
-#import "SzoftverArch-Swift.h"
 #import "NetworkManager.h"
 
 @interface LoginViewController ()
@@ -15,7 +14,6 @@
 @property(weak, nonatomic)
 IBOutlet NSLayoutConstraint* loginContainerBottomConstraint;
 @property(nonatomic) CGFloat tempBottomConstraint;
-@property(nonatomic) PieChartView* pieChart;
 @property (weak, nonatomic) IBOutlet UITextField *usernameTF;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTF;
 @end

@@ -34,4 +34,17 @@
                           failure:(void (^)(AFHTTPRequestOperation *operation,
                                             NSError *error))failure;
 
++ (void)DownloadUsersWithGroup:(Group*)group
+                       success:(void (^)(AFHTTPRequestOperation *operation,
+                                         id responseObject))success
+                       failure:(void (^)(AFHTTPRequestOperation *operation,
+                                         NSError *error))failure;
+
++ (void)AddGroup:(NSString*)groupName
+         success:(void (^)(AFHTTPRequestOperation *operation,
+                           id responseObject))success
+         failure:(void (^)(AFHTTPRequestOperation *operation,
+                           NSError *error))failure;
+
+
 @end

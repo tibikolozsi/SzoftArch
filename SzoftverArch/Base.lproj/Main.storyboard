@@ -111,7 +111,7 @@
             </objects>
             <point key="canvasLocation" x="1755.5" y="1183"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Detail view-->
         <scene sceneID="bD1-Gk-ygL">
             <objects>
                 <viewController id="Eer-n5-rtt" customClass="DetailViewController" sceneMemberID="viewController">
@@ -123,29 +123,149 @@
                         <rect key="frame" x="0.0" y="0.0" width="703" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lV5-zN-UiG">
-                                <rect key="frame" x="330" y="373" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lV5-zN-UiG">
+                                <rect key="frame" x="330" y="79" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="477-cb-mrh" customClass="LineChartView" customModule="SzoftverArch" customModuleProvider="target">
+                                <rect key="frame" x="20" y="64" width="663" height="704"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                        <color key="value" red="0.21960784310000001" green="0.56862745100000001" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationTime">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="touchLineLineColor">
+                                        <color key="value" red="1" green="0.019877772179999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="touchLineBackgroundColor">
+                                        <color key="value" red="1" green="0.019877772179999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="touchLineWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.49752280772682672" green="0.62050189393939392" blue="0.60952204527941045" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lV5-zN-UiG" firstAttribute="top" secondItem="Naa-ZI-rYD" secondAttribute="bottom" constant="15" id="54X-h7-EXm"/>
+                            <constraint firstAttribute="bottom" secondItem="477-cb-mrh" secondAttribute="bottom" id="Ff5-VD-Lwr"/>
+                            <constraint firstItem="477-cb-mrh" firstAttribute="leading" secondItem="7eV-X8-HGx" secondAttribute="leading" constant="20" id="NpV-hC-9tY"/>
+                            <constraint firstAttribute="centerX" secondItem="lV5-zN-UiG" secondAttribute="centerX" id="bE5-j7-YI8"/>
+                            <constraint firstAttribute="trailing" secondItem="477-cb-mrh" secondAttribute="trailing" constant="20" id="dLx-yO-cU1"/>
+                            <constraint firstItem="477-cb-mrh" firstAttribute="top" secondItem="Naa-ZI-rYD" secondAttribute="bottom" id="lh4-6f-yYP"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="qb2-3l-vHd">
-                        <barButtonItem key="rightBarButtonItem" title="Logout" id="cdT-9n-DjK">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Detail view" id="mNZ-jI-GiN">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="UdM-t4-EfE">
                             <connections>
-                                <action selector="logoutButtonTouched:" destination="Eer-n5-rtt" id="1ga-vo-mf8"/>
+                                <action selector="logoutButtonTouched:" destination="Eer-n5-rtt" id="wnn-Nu-nk5"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="LineChartView" destination="477-cb-mrh" id="U53-rF-eko"/>
                         <outlet property="label" destination="lV5-zN-UiG" id="Sh5-69-G7W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dsl-8E-Siu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2759.5" y="915"/>
+        </scene>
+        <!--Add Group View Controller-->
+        <scene sceneID="Wti-4C-UPR">
+            <objects>
+                <viewController id="V8B-K8-5qG" customClass="AddGroupViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ESm-4g-wS0"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ms9-fK-vJ0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uh3-ga-UNI">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Group name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNp-m5-hwO">
+                                <rect key="frame" x="102" y="66" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pl9-3W-UeR">
+                                <rect key="frame" x="102" y="103" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLz-xu-wRs">
+                                <rect key="frame" x="127" y="157" width="30" height="30"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addButtonTouched:" destination="V8B-K8-5qG" eventType="touchUpInside" id="qIt-3c-C5S"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="300" height="200"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="300" height="200"/>
+                    <connections>
+                        <outlet property="addButton" destination="hLz-xu-wRs" id="hHS-tV-j9N"/>
+                        <outlet property="groupNameTF" destination="pl9-3W-UeR" id="iBI-ej-cKB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oPo-e5-aET" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2730" y="-655"/>
+        </scene>
+        <!--Move User View Controller-->
+        <scene sceneID="xAb-yz-4aU">
+            <objects>
+                <viewController id="dFB-BH-alf" customClass="MoveUserViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uq3-PM-NSn"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gdc-Pm-LrZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sgT-gB-JZ6">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rpa-Ur-tvf">
+                                <rect key="frame" x="-10" y="0.0" width="320" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3WY-o5-QnK">
+                                <rect key="frame" x="131" y="250" width="38" height="30"/>
+                                <state key="normal" title="Move">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveButtonTouched:" destination="dFB-BH-alf" eventType="touchUpInside" id="bwR-Ka-ZyY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="300" height="300"/>
+                    <connections>
+                        <outlet property="groupsPickerView" destination="rpa-Ur-tvf" id="sfe-iG-iJj"/>
+                        <outlet property="moveButton" destination="3WY-o5-QnK" id="DLv-Z2-kYR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Yj-is-uuw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3183" y="-669"/>
         </scene>
         <!--Groups-->
         <scene sceneID="Vxa-GM-HOq">
@@ -170,7 +290,13 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Groups" id="I49-Yt-qRD">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="63J-1P-f3p"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="63J-1P-f3p">
+                            <connections>
+                                <segue destination="V8B-K8-5qG" kind="popoverPresentation" identifier="AddGroupSegue" popoverAnchorBarButtonItem="63J-1P-f3p" id="ISz-Kx-MDV">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -204,6 +330,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Users" id="Stk-GZ-p3u">
                         <barButtonItem key="backBarButtonItem" title="Groups" id="3GM-5T-h7k"/>
+                        <barButtonItem key="rightBarButtonItem" title="Move" id="pTW-bO-iAG">
+                            <connections>
+                                <segue destination="dFB-BH-alf" kind="popoverPresentation" popoverAnchorBarButtonItem="pTW-bO-iAG" id="cDx-QB-vFl">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhj-bF-48z" userLabel="First Responder" sceneMemberID="firstResponder"/>

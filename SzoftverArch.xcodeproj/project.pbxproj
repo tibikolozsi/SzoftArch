@@ -32,6 +32,10 @@
 		67C544131A1FF638001AD629 /* GroupsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C544121A1FF638001AD629 /* GroupsTableViewController.m */; };
 		67C544161A1FF645001AD629 /* UsersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C544151A1FF645001AD629 /* UsersTableViewController.m */; };
 		67C544191A1FF867001AD629 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C544181A1FF867001AD629 /* DetailViewController.m */; };
+		67C5441C1A20892A001AD629 /* AddGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C5441B1A20892A001AD629 /* AddGroupViewController.m */; };
+		67C5441F1A208DBF001AD629 /* MoveUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C5441E1A208DBF001AD629 /* MoveUserViewController.m */; };
+		67C544221A209ADD001AD629 /* PullToRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C544211A209ADD001AD629 /* PullToRefreshTableViewController.m */; };
+		67C544251A209F96001AD629 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C544241A209F96001AD629 /* Data.m */; };
 		688B5285892E747CA0E80949 /* libPods-SzoftverArch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 281A0C13A55B2B643225325E /* libPods-SzoftverArch.a */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +89,14 @@
 		67C544151A1FF645001AD629 /* UsersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersTableViewController.m; sourceTree = "<group>"; };
 		67C544171A1FF867001AD629 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ViewControllers/DetailViewController.h; sourceTree = "<group>"; };
 		67C544181A1FF867001AD629 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ViewControllers/DetailViewController.m; sourceTree = "<group>"; };
+		67C5441A1A20892A001AD629 /* AddGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddGroupViewController.h; path = ViewControllers/AddGroupViewController.h; sourceTree = "<group>"; };
+		67C5441B1A20892A001AD629 /* AddGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddGroupViewController.m; path = ViewControllers/AddGroupViewController.m; sourceTree = "<group>"; };
+		67C5441D1A208DBF001AD629 /* MoveUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoveUserViewController.h; path = ViewControllers/MoveUserViewController.h; sourceTree = "<group>"; };
+		67C5441E1A208DBF001AD629 /* MoveUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoveUserViewController.m; path = ViewControllers/MoveUserViewController.m; sourceTree = "<group>"; };
+		67C544201A209ADD001AD629 /* PullToRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PullToRefreshTableViewController.h; path = ViewControllers/PullToRefreshTableViewController.h; sourceTree = "<group>"; };
+		67C544211A209ADD001AD629 /* PullToRefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PullToRefreshTableViewController.m; path = ViewControllers/PullToRefreshTableViewController.m; sourceTree = "<group>"; };
+		67C544231A209F96001AD629 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Data.h; path = Model/Data/Data.h; sourceTree = "<group>"; };
+		67C544241A209F96001AD629 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Data.m; path = Model/Data/Data.m; sourceTree = "<group>"; };
 		76FECD6501EE8FE349B486D1 /* Pods-SzoftverArch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SzoftverArch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SzoftverArch/Pods-SzoftverArch.debug.xcconfig"; sourceTree = "<group>"; };
 		9C155CEB0D1BF8ADD54A7D58 /* Pods-SzoftverArch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SzoftverArch.release.xcconfig"; path = "Pods/Target Support Files/Pods-SzoftverArch/Pods-SzoftverArch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -230,6 +242,12 @@
 				67C544151A1FF645001AD629 /* UsersTableViewController.m */,
 				67C544171A1FF867001AD629 /* DetailViewController.h */,
 				67C544181A1FF867001AD629 /* DetailViewController.m */,
+				67C5441A1A20892A001AD629 /* AddGroupViewController.h */,
+				67C5441B1A20892A001AD629 /* AddGroupViewController.m */,
+				67C5441D1A208DBF001AD629 /* MoveUserViewController.h */,
+				67C5441E1A208DBF001AD629 /* MoveUserViewController.m */,
+				67C544201A209ADD001AD629 /* PullToRefreshTableViewController.h */,
+				67C544211A209ADD001AD629 /* PullToRefreshTableViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -239,6 +257,8 @@
 			children = (
 				67C5440E1A1FEC9C001AD629 /* Group.h */,
 				67C5440F1A1FEC9C001AD629 /* Group.m */,
+				67C544231A209F96001AD629 /* Data.h */,
+				67C544241A209F96001AD629 /* Data.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -388,6 +408,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67C544101A1FEC9C001AD629 /* Group.m in Sources */,
+				67C544221A209ADD001AD629 /* PullToRefreshTableViewController.m in Sources */,
 				6730715C1A0E16230025C4AC /* SliceData.swift in Sources */,
 				673071251A0E15F30025C4AC /* LoginViewController.m in Sources */,
 				6730715A1A0E16230025C4AC /* PieSliceLayer.swift in Sources */,
@@ -397,8 +418,11 @@
 				673071591A0E16230025C4AC /* PieChartView.swift in Sources */,
 				67C5440C1A1FDE3B001AD629 /* RegisterViewController.m in Sources */,
 				6730715B1A0E16230025C4AC /* PSColor.swift in Sources */,
+				67C544251A209F96001AD629 /* Data.m in Sources */,
 				673071571A0E16230025C4AC /* Logger.swift in Sources */,
 				67C544161A1FF645001AD629 /* UsersTableViewController.m in Sources */,
+				67C5441F1A208DBF001AD629 /* MoveUserViewController.m in Sources */,
+				67C5441C1A20892A001AD629 /* AddGroupViewController.m in Sources */,
 				673071581A0E16230025C4AC /* MathHelper.swift in Sources */,
 				673071561A0E16230025C4AC /* LinePoint.swift in Sources */,
 				673071541A0E16230025C4AC /* Line.swift in Sources */,

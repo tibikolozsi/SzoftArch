@@ -67,4 +67,34 @@ static const NSString *kMainUrl = @"http://tippjatek-onnlab.appspot.com";
     [manager GET:downloadGroupsURL parameters:parameters success:success failure:failure];
 }
 
++ (void)DownloadUsersWithGroup:(Group*)group
+                       success:(void (^)(AFHTTPRequestOperation *operation,
+                                         id responseObject))success
+                       failure:(void (^)(AFHTTPRequestOperation *operation,
+                                         NSError *error))failure
+{
+    AFHTTPRequestOperationManager *manager =
+    [AFHTTPRequestOperationManager manager];
+    NSString *downloadGroupUsersURL = [NSString stringWithFormat:@"%@/sz_GetData", kMainUrl];
+    NSDictionary *parameters = @{ @"data" : @"group",
+                                  @"parameter" : @"users",
+                                  @"groupID" : [NSString stringWithFormat:@"%d",group.groupID]};
+    
+    [manager GET:downloadGroupUsersURL parameters:parameters success:success failure:failure];
+}
+
++ (void)AddGroup:(NSString*)groupName
+         success:(void (^)(AFHTTPRequestOperation *operation,
+                           id responseObject))success
+         failure:(void (^)(AFHTTPRequestOperation *operation,
+                           NSError *error))failure
+{
+    AFHTTPRequestOperationManager *manager =
+    [AFHTTPRequestOperationManager manager];
+    NSString *addGroupURL = [NSString stringWithFormat:@"%@/sz_RegisterGroup", kMainUrl];
+    NSDictionary *parameters = @{ @"groupname" : groupName};
+    
+    [manager POST:addGroupURL parameters:parameters success:success failure:failure];
+}
+
 @end
